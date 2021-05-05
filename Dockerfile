@@ -1,7 +1,7 @@
 FROM ubuntu 
-MAINTAINER eazytraining (test@gmail.com) 
+MAINTAINER eazytraining (andersonazotsie@gmail.com) 
 RUN apt-get update 
 RUN apt-get install -y nginx 
-EXPOSE 80 
-ADD static-website-example /var/www/html 
+EXPOSE 90 
+ADD . /var/www/html 
 ENTRYPOINT ["/usr/sbin/nginx", "-d", "daemon off;"]
