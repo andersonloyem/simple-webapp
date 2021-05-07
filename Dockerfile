@@ -1,7 +1,7 @@
 FROM ubuntu 
-MAINTAINER eazytraining (andersonazotsie@gmail.com) 
+MAINTAINER Anderosn Loyem (andersonazotsie@gmail.com) 
 RUN apt-get update 
 RUN apt-get install -y nginx 
-EXPOSE 90 
-ADD . /var/www/html 
+EXPOSE 80 
+ADD app /var/www/html 
 ENTRYPOINT ["/usr/sbin/nginx", "-d", "daemon off;"]
