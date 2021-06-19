@@ -1,5 +1,5 @@
 
-FROM ubuntu 
+FROM ubuntu:groovy-20210614 
 MAINTAINER anderson (andersonazotsie@gmail.com) 
 RUN apt-get update 
 RUN apt-get install -y nginx 
